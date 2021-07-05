@@ -1,0 +1,11 @@
+{# templates/bundles/TwigBundle/Exception/error403.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Access denied</h1>
+
+    <p>
+        Access Denied, You don’t have permission to access on 
+        this resource. <a href="{{ path('app_login') }}">Return to the login page</a>.
+    </p>
+{% endblock %}
